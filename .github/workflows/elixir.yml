@@ -13,6 +13,7 @@ jobs:
 
     # https://github.com/elixir-lang/elixir/blob/main/lib/elixir/pages/references/compatibility-and-deprecations.md
     strategy:
+      fail-fast: false
       matrix:
         include:
 
@@ -71,7 +72,7 @@ jobs:
             otp_release: 26.2
 
           - elixir: 1.17.3
-            otp_release: 27.1
+            otp_release: 27.3
 
           # Elixir 1.18
 
